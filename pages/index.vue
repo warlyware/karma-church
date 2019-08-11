@@ -1,77 +1,40 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        karma-church
-      </h1>
-      <h2 class="subtitle">
-        Home of Karma Church
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="w-screen h-screen flex flex-col justify-around items-center bg-blue-800 giant-text">
+    <div class="text-yellow-600 star">
+      *
+    </div>
+    <div class="text-yellow-600 word-karma ml-2">
+      KARMA
+    </div>
+    <div class="text-yellow-600 word-church">
+      CHURCH
+    </div>
+    <div class="text-yellow-600 star star-2">
+      *
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
-  }
-}
+export default { }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style scoped>
+  .star {
+    line-height: 1em;
+  }
+  .star-2 {
+    transform:rotate(-180deg);
+  }
+  .giant-text {
+    line-height: 0.8;
+    font-size: 20vw
+  }
+  .word-karma {
+    letter-spacing: 0.22em;
+  }
+  .word-church {
+    letter-spacing: 0.05em;
+  }
 </style>
