@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="bg-blue-800 h-screen flex flex-col justify-center">
     <nuxt />
   </div>
 </template>
 
 <style>
 html {
-  font-family: 'Tenor Sans', sans-serif;
+  overflow: hidden;
+  font-family: 'Prociono', serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
